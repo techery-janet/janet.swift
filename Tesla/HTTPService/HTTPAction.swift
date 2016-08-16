@@ -24,7 +24,7 @@ public class HTTPAction<R> : TeslaActionWithResult<R>, HTTPActionWireframe {
     
 }
 
-public enum HTTPMethod {
+public enum HTTPMethod : String {
     case GET
     case POST
     case PUT
@@ -32,8 +32,12 @@ public enum HTTPMethod {
     case HEAD
 }
 
-public class NamedField<T> : PropertyDecorator<T> {
-    let name:String
+public protocol NamedProperty : Property {
+    var name:String { get }
+}
+
+public class NamedField<T> : PropertyDecorator<T>, NamedProperty {
+    public let name:String
     let isOptional:Bool
     
     public init(_ name:String, isOptional:Bool) {
@@ -47,14 +51,22 @@ public class NamedField<T> : PropertyDecorator<T> {
     }
 }
 
-public protocol FormFieldProperty : Property {}
+public protocol FormFieldProperty : NamedProperty {}
 public class FormField<T> : NamedField<T>, FormFieldProperty {}
 
-public protocol QueryFieldProperty : Property {}
+public protocol QueryFieldProperty : NamedProperty {}
 public class QueryField<T>  : NamedField<T>, QueryFieldProperty {}
 
-public protocol PathFieldProperty : Property {}
+public protocol PathFieldProperty : NamedProperty {}
 public class PathField<T>  : NamedField<T>, PathFieldProperty {}
+
+
+public class Header : NamedField<String> {
+    public init(_ name: String, _ val:String) {
+        super.init(name)
+        self.value = val
+    }
+}
 
 public struct Path  {
     let value:String
@@ -72,7 +84,7 @@ public struct Body<T> : BodyProperty {
         self.value = value
     }
     
-    public func get() -> Any {
+    public func get() -> Any? {
         return self.value
     }
     

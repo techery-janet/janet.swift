@@ -17,6 +17,8 @@ struct HTTPActionScheme {
         let path = parser.getProp(Path.self)!
         let method = parser.getProp(HTTPMethod.self)!
         
+        let requestHeaders = parser.getProps(Header.self)
+        
         let responses = parser.getProps(ResponseProperty.self)
         
         let queryFields = parser.getProps(QueryFieldProperty.self)
@@ -27,6 +29,7 @@ struct HTTPActionScheme {
         let scheme = HTTPActionScheme(
             path: path,
             method: method,
+            requestHeaders:requestHeaders,
             queryFields: queryFields,
             formFields: formFields,
             bodyField: bodyProperty,
@@ -41,6 +44,8 @@ struct HTTPActionScheme {
     let path:Path
     let method:HTTPMethod
     
+    let requestHeaders:[Header]
+    
     let queryFields:[QueryFieldProperty]
     let formFields:[FormFieldProperty]
     let bodyField:BodyProperty?
@@ -48,7 +53,7 @@ struct HTTPActionScheme {
     let responses:[ResponseProperty]
     
     func validate() {
-        if (self.method == .POST && (self.formFields.isEmpty || self.bodyField == nil)) {
+        if (self.method == HTTPMethod.POST && (self.formFields.isEmpty || self.bodyField == nil)) {
             assertionFailure("Request with method POST should contains form fields")
         }
     }

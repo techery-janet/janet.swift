@@ -13,7 +13,7 @@ public struct ValueStoreError : Error {
 }
 
 public protocol ReadonlyProperty {
-    func get() -> Any
+    func get() -> Any?
     func valueType() -> Any.Type
 }
 
@@ -28,7 +28,7 @@ public protocol Property : WritableProperty {
 public class PropertyDecorator<T> : Property {
     public var value:T?
     
-    public func get() -> Any {
+    public func get() -> Any? {
         return value
     }
     

@@ -52,6 +52,7 @@ public protocol TypedActionService : ActionService {
 }
 
 public extension TypedActionService {
+    
     func onStart(_ action:ActionType) {
         if let teslaAction = action as? TeslaAction {
             self.callback?.onStart(teslaAction)
@@ -287,8 +288,8 @@ public class Tesla : TeslaPipeFactory {
     private func createScopedPipeline<T:TeslaAction>() -> Observable<ActionState<T>> {
         return self.pipeline.filter { (actionState) -> Bool in
             return actionState.canCastTo(T.self)
-            }.map { (actionState) -> ActionState<T> in
-                return actionState.castTo()
+        }.map { (actionState) -> ActionState<T> in
+            return actionState.castTo()
         }
     }
     
@@ -299,8 +300,8 @@ public class Tesla : TeslaPipeFactory {
         
         let actionObservable = self.pipeline.filter { (actionState) -> Bool in
             return actionState.action() === action
-            }.map { (actionState) -> ActionState<T> in
-                return actionState.castTo()
+        }.map { (actionState) -> ActionState<T> in
+            return actionState.castTo()
         }
         
         service.execute(action)

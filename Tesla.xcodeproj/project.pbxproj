@@ -7,37 +7,36 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AD5656AC1D634B4300679201 /* RoutableService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD8AF5141D6212F700EAA109 /* RoutableService.swift */; };
+		AD5656B31D634D3400679201 /* Tesla.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD8AF4CA1D60A5C800EAA109 /* Tesla.framework */; };
+		AD5656B61D634D4200679201 /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD8AF5091D6212AD00EAA109 /* RxSwift.framework */; };
+		AD5656B71D634D4200679201 /* RxSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = AD8AF5091D6212AD00EAA109 /* RxSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		AD5656BA1D634E5A00679201 /* Tesla.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = AD8AF4CA1D60A5C800EAA109 /* Tesla.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		AD5656BE1D63668200679201 /* ConcurrentOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD5656BD1D63668200679201 /* ConcurrentOperation.swift */; };
+		AD5656C01D63669600679201 /* HTTPActionOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD5656BF1D63669600679201 /* HTTPActionOperation.swift */; };
 		AD8AF4D41D60A5C800EAA109 /* Tesla.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD8AF4CA1D60A5C800EAA109 /* Tesla.framework */; };
 		AD8AF4D91D60A5C800EAA109 /* TeslaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD8AF4D81D60A5C800EAA109 /* TeslaTests.swift */; };
 		AD8AF4DB1D60A5C800EAA109 /* Tesla.h in Headers */ = {isa = PBXBuildFile; fileRef = AD8AF4CD1D60A5C800EAA109 /* Tesla.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		AD8AF4E51D60A5E300EAA109 /* Tesla.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD8AF4E41D60A5E300EAA109 /* Tesla.swift */; };
-		AD8AF4F21D62123B00EAA109 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD8AF4F11D62123B00EAA109 /* AppDelegate.swift */; };
 		AD8AF5021D62127C00EAA109 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD8AF5011D62127C00EAA109 /* RootViewController.swift */; };
-		AD8AF5031D62129800EAA109 /* Tesla.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD8AF4CA1D60A5C800EAA109 /* Tesla.framework */; };
-		AD8AF5041D62129800EAA109 /* Tesla.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = AD8AF4CA1D60A5C800EAA109 /* Tesla.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		AD8AF50B1D6212AD00EAA109 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD8AF5081D6212AD00EAA109 /* Alamofire.framework */; };
 		AD8AF50D1D6212AD00EAA109 /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD8AF5091D6212AD00EAA109 /* RxSwift.framework */; };
 		AD8AF5151D6212F700EAA109 /* PropertyDecorator.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD8AF5131D6212F700EAA109 /* PropertyDecorator.swift */; };
-		AD8AF5161D6212F700EAA109 /* RoutableService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD8AF5141D6212F700EAA109 /* RoutableService.swift */; };
 		AD8AF51B1D6212FA00EAA109 /* HTTPAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD8AF5181D6212FA00EAA109 /* HTTPAction.swift */; };
 		AD8AF51C1D6212FA00EAA109 /* HTTPActionScheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD8AF5191D6212FA00EAA109 /* HTTPActionScheme.swift */; };
 		AD8AF51D1D6212FA00EAA109 /* HTTPService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD8AF51A1D6212FA00EAA109 /* HTTPService.swift */; };
-		AD8AF51E1D6214B400EAA109 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD8AF5081D6212AD00EAA109 /* Alamofire.framework */; };
-		AD8AF51F1D6214B400EAA109 /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = AD8AF5081D6212AD00EAA109 /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		AD8AF5201D6214B400EAA109 /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD8AF5091D6212AD00EAA109 /* RxSwift.framework */; };
-		AD8AF5211D6214B400EAA109 /* RxSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = AD8AF5091D6212AD00EAA109 /* RxSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		AD8AF5231D6214E300EAA109 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AD8AF5221D6214E300EAA109 /* Default-568h@2x.png */; };
+		AD8AF5251D621CE000EAA109 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD8AF5241D621CE000EAA109 /* AppDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		AD8AF4D51D60A5C800EAA109 /* PBXContainerItemProxy */ = {
+		AD5656BB1D634E5A00679201 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = AD8AF4C11D60A5C800EAA109 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = AD8AF4C91D60A5C800EAA109;
 			remoteInfo = Tesla;
 		};
-		AD8AF5051D62129800EAA109 /* PBXContainerItemProxy */ = {
+		AD8AF4D51D60A5C800EAA109 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = AD8AF4C11D60A5C800EAA109 /* Project object */;
 			proxyType = 1;
@@ -47,15 +46,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		AD8AF5071D62129800EAA109 /* Embed Frameworks */ = {
+		AD5656B81D634D4200679201 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				AD8AF5041D62129800EAA109 /* Tesla.framework in Embed Frameworks */,
-				AD8AF51F1D6214B400EAA109 /* Alamofire.framework in Embed Frameworks */,
-				AD8AF5211D6214B400EAA109 /* RxSwift.framework in Embed Frameworks */,
+				AD5656B71D634D4200679201 /* RxSwift.framework in Embed Frameworks */,
+				AD5656BA1D634E5A00679201 /* Tesla.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -63,6 +61,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		AD5656BD1D63668200679201 /* ConcurrentOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConcurrentOperation.swift; sourceTree = "<group>"; };
+		AD5656BF1D63669600679201 /* HTTPActionOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPActionOperation.swift; sourceTree = "<group>"; };
 		AD8AF4CA1D60A5C800EAA109 /* Tesla.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Tesla.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD8AF4CD1D60A5C800EAA109 /* Tesla.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Tesla.h; sourceTree = "<group>"; };
 		AD8AF4CE1D60A5C800EAA109 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -71,10 +71,8 @@
 		AD8AF4DA1D60A5C800EAA109 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AD8AF4E41D60A5E300EAA109 /* Tesla.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tesla.swift; sourceTree = "<group>"; };
 		AD8AF4EF1D62123A00EAA109 /* TeslaSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TeslaSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		AD8AF4F11D62123B00EAA109 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AD8AF4FD1D62123B00EAA109 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AD8AF5011D62127C00EAA109 /* RootViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
-		AD8AF5081D6212AD00EAA109 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
 		AD8AF5091D6212AD00EAA109 /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxSwift.framework; path = Carthage/Build/iOS/RxSwift.framework; sourceTree = "<group>"; };
 		AD8AF5131D6212F700EAA109 /* PropertyDecorator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PropertyDecorator.swift; sourceTree = "<group>"; };
 		AD8AF5141D6212F700EAA109 /* RoutableService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoutableService.swift; sourceTree = "<group>"; };
@@ -82,6 +80,7 @@
 		AD8AF5191D6212FA00EAA109 /* HTTPActionScheme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPActionScheme.swift; sourceTree = "<group>"; };
 		AD8AF51A1D6212FA00EAA109 /* HTTPService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPService.swift; sourceTree = "<group>"; };
 		AD8AF5221D6214E300EAA109 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		AD8AF5241D621CE000EAA109 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,7 +89,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				AD8AF50D1D6212AD00EAA109 /* RxSwift.framework in Frameworks */,
-				AD8AF50B1D6212AD00EAA109 /* Alamofire.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -106,9 +104,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AD8AF5031D62129800EAA109 /* Tesla.framework in Frameworks */,
-				AD8AF51E1D6214B400EAA109 /* Alamofire.framework in Frameworks */,
-				AD8AF5201D6214B400EAA109 /* RxSwift.framework in Frameworks */,
+				AD5656B31D634D3400679201 /* Tesla.framework in Frameworks */,
+				AD5656B61D634D4200679201 /* RxSwift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -145,6 +142,7 @@
 				AD8AF4E41D60A5E300EAA109 /* Tesla.swift */,
 				AD8AF4CD1D60A5C800EAA109 /* Tesla.h */,
 				AD8AF4CE1D60A5C800EAA109 /* Info.plist */,
+				AD5656BD1D63668200679201 /* ConcurrentOperation.swift */,
 			);
 			path = Tesla;
 			sourceTree = "<group>";
@@ -161,9 +159,9 @@
 		AD8AF4F01D62123B00EAA109 /* TeslaSample */ = {
 			isa = PBXGroup;
 			children = (
+				AD8AF5241D621CE000EAA109 /* AppDelegate.swift */,
 				AD8AF5221D6214E300EAA109 /* Default-568h@2x.png */,
 				AD8AF5011D62127C00EAA109 /* RootViewController.swift */,
-				AD8AF4F11D62123B00EAA109 /* AppDelegate.swift */,
 				AD8AF4FD1D62123B00EAA109 /* Info.plist */,
 			);
 			path = TeslaSample;
@@ -172,7 +170,6 @@
 		AD8AF5121D6212B700EAA109 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				AD8AF5081D6212AD00EAA109 /* Alamofire.framework */,
 				AD8AF5091D6212AD00EAA109 /* RxSwift.framework */,
 			);
 			name = Frameworks;
@@ -184,6 +181,7 @@
 				AD8AF5181D6212FA00EAA109 /* HTTPAction.swift */,
 				AD8AF5191D6212FA00EAA109 /* HTTPActionScheme.swift */,
 				AD8AF51A1D6212FA00EAA109 /* HTTPService.swift */,
+				AD5656BF1D63669600679201 /* HTTPActionOperation.swift */,
 			);
 			path = HTTPService;
 			sourceTree = "<group>";
@@ -245,12 +243,12 @@
 				AD8AF4EB1D62123A00EAA109 /* Sources */,
 				AD8AF4EC1D62123A00EAA109 /* Frameworks */,
 				AD8AF4ED1D62123A00EAA109 /* Resources */,
-				AD8AF5071D62129800EAA109 /* Embed Frameworks */,
+				AD5656B81D634D4200679201 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				AD8AF5061D62129800EAA109 /* PBXTargetDependency */,
+				AD5656BC1D634E5A00679201 /* PBXTargetDependency */,
 			);
 			name = TeslaSample;
 			productName = TeslaSample;
@@ -335,10 +333,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AD8AF5161D6212F700EAA109 /* RoutableService.swift in Sources */,
 				AD8AF51C1D6212FA00EAA109 /* HTTPActionScheme.swift in Sources */,
 				AD8AF51B1D6212FA00EAA109 /* HTTPAction.swift in Sources */,
 				AD8AF51D1D6212FA00EAA109 /* HTTPService.swift in Sources */,
+				AD5656C01D63669600679201 /* HTTPActionOperation.swift in Sources */,
+				AD5656BE1D63668200679201 /* ConcurrentOperation.swift in Sources */,
+				AD5656AC1D634B4300679201 /* RoutableService.swift in Sources */,
 				AD8AF5151D6212F700EAA109 /* PropertyDecorator.swift in Sources */,
 				AD8AF4E51D60A5E300EAA109 /* Tesla.swift in Sources */,
 			);
@@ -356,23 +356,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AD8AF5251D621CE000EAA109 /* AppDelegate.swift in Sources */,
 				AD8AF5021D62127C00EAA109 /* RootViewController.swift in Sources */,
-				AD8AF4F21D62123B00EAA109 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		AD5656BC1D634E5A00679201 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AD8AF4C91D60A5C800EAA109 /* Tesla */;
+			targetProxy = AD5656BB1D634E5A00679201 /* PBXContainerItemProxy */;
+		};
 		AD8AF4D61D60A5C800EAA109 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = AD8AF4C91D60A5C800EAA109 /* Tesla */;
 			targetProxy = AD8AF4D51D60A5C800EAA109 /* PBXContainerItemProxy */;
-		};
-		AD8AF5061D62129800EAA109 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = AD8AF4C91D60A5C800EAA109 /* Tesla */;
-			targetProxy = AD8AF5051D62129800EAA109 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -624,6 +624,7 @@
 				AD8AF4FF1D62123B00EAA109 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

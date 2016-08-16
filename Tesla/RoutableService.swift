@@ -1,11 +1,3 @@
-//
-//  RoutableService.swift
-//  Tesla
-//
-//  Created by Sergey Zenchenko on 8/14/16.
-//  Copyright © 2016 Techery. All rights reserved.
-//
-
 import Foundation
 
 protocol ActionRoute {
